@@ -1,0 +1,39 @@
+baseURL: "http://localhost:1313/"
+languageCode: "pt-br"
+title: "Spatium Fidei"
+theme: "PaperMod"
+
+params:
+  author: "Paroquianos do Junco"
+  description: "Um espaço para a fé e a espiritualidade católica."
+  showReadingTime: true
+  showShareButtons: true
+  defaultTheme: "auto"
+  dateFormat: "02 de Janeiro de 2006"
+
+menu:
+  main:
+    - identifier: "inicio"
+      name: "Início"
+      url: "/"
+      weight: 1
+    - identifier: "sobre"
+      name: "Sobre"
+      url: "/sobre/"
+      weight: 2
+    - identifier: "contato"
+      name: "Contato"
+      url: "/contato/"
+      weight: 3
+
+taxonomies:
+  category: "categorias"
+  tag: "tags"
+
+permalinks:
+  posts: "/:year/:month/:day/:slug/"
+
+outputs:
+  home:
+    - HTML
+    - RSS
